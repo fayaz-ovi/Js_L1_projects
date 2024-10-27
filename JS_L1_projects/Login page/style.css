@@ -1,0 +1,160 @@
+
+body{
+    background:url(download.jpg) no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    margin: 0;
+}
+
+header{
+    margin: 0;
+    display:flex;
+    justify-content:space-between;
+    top:0;
+    right:0;
+    width: 100%;
+    align-items:center;
+    z-index:99;
+    }
+
+li{
+    list-style:none;
+    left:0;
+}
+.divBody{
+    display:flex;
+    justify-content:center;
+}
+.loginContainer{
+    display:flex;
+    align-items:center;
+    background-color:aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+
+}
+.normal a{
+    position:relative;
+    text-decoration: none;
+    color: white;
+    padding:1rem;
+    font-weight:500;
+}
+.navBar button{
+    background-color:rgb(255, 255, 255);
+
+}
+.sidebar{
+    display:none;
+}
+
+.toggleButton{
+    display:none;
+    margin-right:2rem;
+    position:absolute;
+    cursor:pointer;
+    
+}
+
+.login-container {
+    background-color: #125fe34b;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 300px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color:white#333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fdfdfd;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+@media (max-width: 800px){
+    .toggleButton{
+        display:block;
+        right:0;
+    }
+    .normal{
+        display:none;
+    }
+    .dropDown{
+        position:absolute;
+        right:0;
+        top:4rem;
+        width:10rem;
+        justify-content:center;
+        align-items:center;
+        right:1rem;
+        border-radius:5rem;
+
+    }
+    .sidebar{
+        display:none;
+        flex-direction:column;
+        margin:0;
+        padding:0;
+        
+    }
+    .sidebar li{
+        background-color: blue;
+        border-radius:10rem;
+
+    }
+    .sidebar li a{
+            display:flex;
+            text-decoration: none;
+            color: white;
+            font-weight:500;
+            width:100%;
+            justify-content:center;
+            margin-top:1rem;
+            margin-bottom:1rem;
+    }
+    .sidebar li:hover{
+        background-color:rgba(14, 96, 204, 0.324)
+    }
+
+}
